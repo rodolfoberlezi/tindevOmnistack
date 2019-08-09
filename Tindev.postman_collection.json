@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "c9f49ee8-7e65-456c-843e-f264a1bf46e4",
+		"name": "Tindev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create Dev",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"giovanelizot\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3333/devs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"devs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Devs Avaliables",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "5d4b212952d5c60edcb5e3d1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3333/devs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"devs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dislike",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "5d4b212952d5c60edcb5e3d1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3333/devs/5d4b21c652d5c60edcb5e3d7/dislikes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"devs",
+						"5d4b21c652d5c60edcb5e3d7",
+						"dislikes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "5d4b212952d5c60edcb5e3d1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3333/devs/5d4b211452d5c60edcb5e3d0/likes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"devs",
+						"5d4b211452d5c60edcb5e3d0",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
