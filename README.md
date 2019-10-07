@@ -5,4 +5,4 @@ The app simulates Tinder with the GitHub users.
 
 Must set a mongodb localhost running for the Node API. 
 
-Everything has been developed for training and study during the 8th edition of the Omnistack Week realized by RocketSeat.
+Everything has been developed for training and study during the 8th edition of the Omnistack Week launched by RocketSeat.
